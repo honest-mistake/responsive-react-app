@@ -1,0 +1,25 @@
+@import '~scss/global-values.scss';
+
+.footer-desktop {
+    background-color: $gray-light;
+    padding: 10px 0;
+
+    .footer {
+
+        &--wrapper {
+            width: $page-width;
+            margin: 0 auto;
+        }
+
+        &--copyright {
+            width: 600px;
+            font-size: 13px;
+            color: $text-gray;
+            margin-top: 25px;
+        }
+
+        &--link {
+            color: $blue;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@import '~scss/global-values.scss';
+
+.footer-tablet {
+    background-color: $background-gray;
+    padding: 15px 30px;
+    color: $text-gray;
+    font-size: 12px;
+
+    .footer {
+
+        &--copyright {
+            width: 90%;
+        }
+
+        &--link {
+            color: $text-blue;
+        }
+    }
+}

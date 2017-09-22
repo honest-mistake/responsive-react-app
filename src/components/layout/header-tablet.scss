@@ -1,0 +1,20 @@
+@import '~scss/global-values.scss';
+
+.header-tablet {
+    background-color: $background-blue;
+    color: $white;
+    padding: 20px 30px;
+    font-size: 30px;
+    position: relative;
+
+    .header {
+
+        &--login {
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            transform: translate(0, -50%);
+            font-size: 16px;
+        }
+    }
+}

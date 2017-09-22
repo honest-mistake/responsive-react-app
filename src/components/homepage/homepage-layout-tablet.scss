@@ -1,0 +1,56 @@
+@import '~scss/global-values';
+
+.homepage-layout-tablet {
+
+    .layout {
+
+        &--promo {
+
+            &-image {
+                background-color: $background-gray;
+                color: $text-gray;
+                font-size: 40px;
+                font-weight: bold;
+                padding: 20% 0;
+                text-align: center;
+                vertical-align: middle;
+                width: 100%;
+            }
+
+            &-ad1,
+            &-ad2 {
+                display: inline-block;
+                width: 50%;
+                text-align: center;
+                padding: 100px 0;
+                font-weight: bold;
+                font-size: 30px;
+            }
+
+            &-ad1 {
+                background-color: $blue-dark;
+                color: $orange;
+            }
+
+            &-ad2 {
+                background-color: $orange;
+                color: $blue-dark;
+            }
+        }
+
+
+        &--action,
+        &--option {
+            display: inline-block;
+            width: 33.33%;
+            text-decoration: none;
+            font-weight: bold;
+            color: $text-blue;
+            padding: 30px 0;
+            border: 1px solid $gray-light;
+            margin: 0;
+            text-align: center;
+            vertical-align: top;
+        }
+    }
+}

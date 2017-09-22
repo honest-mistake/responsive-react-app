@@ -1,0 +1,40 @@
+@import '~scss/global-values.scss';
+
+.header-desktop {
+    background: linear-gradient(#050a1d,rgba(5,10,29,0));
+    height: 150px;
+    color: $white;
+
+    .header {
+
+        &--wrapper {
+            width: $page-width;
+            margin: 0 auto;
+            position: relative;
+            padding: 20px 0;
+        }
+
+        &--logo {
+            font-size: 42px;
+            font-weight: bold;
+        }
+
+        &--actions {
+            font-size: 13px;
+        }
+
+        &--actions {
+            position: absolute;
+            right: 0;
+            top: 20px;
+        }
+
+        &--menu {
+            font-weight: bold;
+            font-size: 14px;
+            position: absolute;
+            right: 0;
+            top: 70px;
+        }
+    }
+}

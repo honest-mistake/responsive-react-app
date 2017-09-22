@@ -1,0 +1,76 @@
+@import '~scss/global-values.scss';
+
+.homepage-layout-desktop {
+    background: linear-gradient(#E5E5E5,rgba(5,10,29,0));
+
+    .layout {
+
+        &--wrapper {
+            width: $page-width;
+            margin: 0 auto;
+        }
+
+        &--promo-main {
+            font-size: 60px;
+            font-weight: bold;
+            margin-top: -20px;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        &--thing {
+            color: $gray-dark;
+            background-color: $white;
+            border: 1px solid $gray-light;
+            text-align: center;
+            padding: 100px 0;
+            font-weight: bold;
+            font-size: 44px;
+        }
+
+        &--ads {
+            margin-top: 15px;
+        }
+
+        &--ad1,
+        &--ad2 {
+            display: inline-block;
+            width: 50%;
+            text-align: center;
+            padding: 120px 0;
+            font-weight: bold;
+            font-size: 40px;
+        }
+
+        &--ad1 {
+            background-color: $blue-dark;
+            color: $orange;
+        }
+
+        &--ad2 {
+            background-color: $orange;
+            color: $blue-dark;
+        }
+
+        &--initiatives {
+            width: $page-width;
+            margin: 0 auto 15px;
+
+            &-wrapper {
+                margin-top: 15px;
+                background-color: $white;
+                color: $blue;
+                font-weight: bold;
+                font-size: 50px;
+            }
+        }
+
+        &--initiative {
+            display: inline-block;
+            border: 1px solid $gray-light;
+            text-align: center;
+            width: 50%;
+            padding: 130px 0;
+        }
+    }
+}

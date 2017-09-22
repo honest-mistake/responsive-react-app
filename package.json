@@ -1,0 +1,54 @@
+{
+  "name": "swa-app-sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development webpack",
+    "prod": "NODE_ENV=production webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "brian",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "bundle-loader": "^0.5.5",
+    "classnames": "^2.1.2",
+    "lodash": "^4.17.4",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-router-dom": "^4.1.1",
+    "react-router-redux": "^4.0.8",
+    "react-universal-component": "^2.5.0",
+    "redux": "^3.7.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.0",
+    "babel-plugin-universal-import": "^1.2.6",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "browser-sync": "^2.18.12",
+    "browser-sync-webpack-plugin": "^1.1.4",
+    "clean-webpack-plugin": "^0.1.16",
+    "css-loader": "^0.28.4",
+    "eval": "^0.1.2",
+    "extract-css-chunks-webpack-plugin": "^2.0.16",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "html-webpack-plugin": "^2.28.0",
+    "node-sass": "^4.5.3",
+    "react-static-webpack-plugin": "^2.1.0",
+    "sass-loader": "^6.0.6",
+    "static-site-generator-webpack-plugin": "^3.4.1",
+    "uglifyjs-webpack-plugin": "^0.4.6",
+    "webpack": "^3.0.0",
+    "webpack-bundle-analyzer": "^2.9.0"
+  }
+}

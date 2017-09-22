@@ -1,0 +1,22 @@
+@import '~scss/global-values.scss';
+
+
+.header-mobile {
+    background-color: $background-blue;
+    color: $text-white;
+    padding: 15px 10px;
+    font-style: bold;
+    font-size: 20px;
+    position: relative;
+
+    .header {
+
+        &--login {
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            right: 10px;
+            font-size: 13px;
+        }
+    }
+}
