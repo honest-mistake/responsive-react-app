@@ -4,8 +4,6 @@ import {each} from 'lodash';
 import breakpointsData from 'data/responsive-breakpoints-data';
 import LazyComponentLoader from 'components/loaders/lazy-component-loader';
 
-let asyncLoadedContent = {};
-
 class Responsive extends React.Component {
 
     constructor (props) {
@@ -37,18 +35,9 @@ class Responsive extends React.Component {
     }
 
     renderContent () {
-        const {renderKey} = this.state;
-        const config = this.props.renderConfig[renderKey];
-        const loadedContent = asyncLoadedContent[renderKey];
-        let content;
+        const config = this.props.renderConfig[this.state.renderKey];
 
-        if (loadedContent) {
-            content = loadedContent;
-        } else {
-            content = <LazyComponentLoader name={config.name} load={config.component} />;
-        }
-
-        return content;
+        return <LazyComponentLoader name={config.name} load={config.component} />;
     }
 
     getRendererKey () {
