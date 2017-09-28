@@ -1,6 +1,6 @@
 import React from 'react';
 import {Switch, Route} from 'react-router-dom';
-import HomepageContainerTablet from 'components/homepage/homepage-container-tablet';
+import HomepageContainerTablet from 'components/pages/homepage/homepage-container-tablet';
 
 class NewComponent extends React.Component {
     render () {

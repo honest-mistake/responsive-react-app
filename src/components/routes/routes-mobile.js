@@ -1,6 +1,6 @@
 import React from 'react';
 import {Switch, Route} from 'react-router-dom';
-import HomepageContainerMobile from 'components/homepage/homepage-container-mobile';
+import HomepageContainerMobile from 'components/pages/homepage/homepage-container-mobile';
 
 class NewComponent extends React.Component {
     render () {

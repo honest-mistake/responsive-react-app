@@ -1,6 +1,6 @@
 import React from 'react';
 import {Switch, Route} from 'react-router-dom';
-import HomepageContainerDesktop from 'components/homepage/homepage-container-desktop';
+import HomepageContainerDesktop from 'components/pages/homepage/homepage-container-desktop';
 
 class NewComponent extends React.Component {
     render () {

@@ -1,6 +1,6 @@
 import React from 'react';
 import PageLayoutMobile from 'components/layout-common/page-layout-mobile';
-import HompageLayoutMobile from 'components/homepage/homepage-layout-mobile';
+import HompageLayoutMobile from 'components/pages/homepage/homepage-layout-mobile';
 import homepageData from 'data/homepage-data';
 import {zip, flatten} from 'lodash';
 

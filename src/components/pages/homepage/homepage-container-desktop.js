@@ -1,6 +1,6 @@
 import React from 'react';
 import PageLayoutDesktop from 'components/layout-common/page-layout-desktop';
-import HomepageLayoutDesktop from 'components/homepage/homepage-layout-desktop';
+import HomepageLayoutDesktop from 'components/pages/homepage/homepage-layout-desktop';
 
 class HomepageContainerDesktop extends React.Component {
 
