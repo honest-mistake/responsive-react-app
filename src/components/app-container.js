@@ -1,5 +1,5 @@
 import React from 'react';
-import AppLayout from 'components/layout/app-layout';
+import AppLayout from 'components/layout-common/app-layout';
 
 class AppContainer extends React.Component {
 

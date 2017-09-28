@@ -1,6 +1,6 @@
 import React from 'react';
-import HeaderDesktop from 'components/layout/header-desktop';
-import FooterDesktop from 'components/layout/footer-desktop';
+import HeaderDesktop from 'components/layout-common/header-desktop';
+import FooterDesktop from 'components/layout-common/footer-desktop';
 
 class PageLayoutDesktop extends React.Component {
 

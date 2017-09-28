@@ -1,5 +1,5 @@
 import React from 'react';
-import ResetStyleLoader from 'components/layout/reset-style-loader';
+import ResetStyleLoader from 'components/layout-common/reset-style-loader';
 
 class AppLayout extends React.Component {
 

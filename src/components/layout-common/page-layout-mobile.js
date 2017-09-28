@@ -1,6 +1,6 @@
 import React from 'react';
-import HeaderMobile from 'components/layout/header-mobile';
-import FooterMobile from 'components/layout/footer-mobile';
+import HeaderMobile from 'components/layout-common/header-mobile';
+import FooterMobile from 'components/layout-common/footer-mobile';
 
 class PageLayoutMobile extends React.Component {
 
