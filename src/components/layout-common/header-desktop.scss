@@ -3,16 +3,10 @@
 .header-desktop {
     background: linear-gradient(#050a1d,rgba(5,10,29,0));
     height: 150px;
+    padding-top: 20px;
     color: $white;
 
     .header {
-
-        &--wrapper {
-            width: $page-width;
-            margin: 0 auto;
-            position: relative;
-            padding: 20px 0;
-        }
 
         &--logo {
             font-size: 42px;
@@ -36,5 +30,10 @@
             right: 0;
             top: 70px;
         }
+    }
+
+    &_white {
+        color: $blue;
+        background: none;
     }
 }

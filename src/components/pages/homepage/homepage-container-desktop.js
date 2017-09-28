@@ -5,7 +5,7 @@ import HomepageLayoutDesktop from 'components/pages/homepage/homepage-layout-des
 class HomepageContainerDesktop extends React.Component {
 
     render () {
-        return(
+        return (
             <PageLayoutDesktop>
                 <HomepageLayoutDesktop />
             </PageLayoutDesktop>

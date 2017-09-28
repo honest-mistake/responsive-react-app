@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import HeaderDesktop from 'components/layout-common/header-desktop';
 import FooterDesktop from 'components/layout-common/footer-desktop';
 
@@ -7,7 +8,7 @@ class PageLayoutDesktop extends React.Component {
     render () {
         return (
             <div className="page-layout-desktop">
-                <HeaderDesktop />
+                <HeaderDesktop type={this.props.headerType} />
                 <main>
                     {this.props.children}
                 </main>
@@ -16,5 +17,9 @@ class PageLayoutDesktop extends React.Component {
         );
     }
 }
+
+PageLayoutDesktop.propTypes = {
+    headerType: PropTypes.string
+};
 
 export default PageLayoutDesktop;

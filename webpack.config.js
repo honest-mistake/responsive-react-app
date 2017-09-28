@@ -70,7 +70,7 @@ let config = {
         //     paths: ['index.html']
         // }),
         new PathToHtmlPlugin({
-            paths: ['index', 'test'],
+            paths: ['index', 'results', 'test'],
             template: './src/components/html-template.js'
         }),
         // new StyleSplitterPlugin({

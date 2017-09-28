@@ -5,11 +5,6 @@
 
     .layout {
 
-        &--wrapper {
-            width: $page-width;
-            margin: 0 auto;
-        }
-
         &--promo-main {
             font-size: 60px;
             font-weight: bold;
@@ -53,8 +48,6 @@
         }
 
         &--initiatives {
-            width: $page-width;
-            margin: 0 auto 15px;
 
             &-wrapper {
                 margin-top: 15px;

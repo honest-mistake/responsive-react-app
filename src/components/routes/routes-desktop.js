@@ -1,12 +1,7 @@
 import React from 'react';
 import {Switch, Route} from 'react-router-dom';
 import HomepageContainerDesktop from 'components/pages/homepage/homepage-container-desktop';
-
-class NewComponent extends React.Component {
-    render () {
-        return <div>Desktop test</div>
-    }
-}
+import ResultsContainerDesktop from 'components/pages/results/results-container-desktop';
 
 export default class RoutesDesktop extends React.Component {
     render () {
@@ -14,7 +9,7 @@ export default class RoutesDesktop extends React.Component {
             <Switch>
                 <Route exact path="/" component={HomepageContainerDesktop} />
                 <Route exact path="/index.html" component={HomepageContainerDesktop} />
-                <Route path="/test.html" component={NewComponent} />
+                <Route path="/results.html" component={ResultsContainerDesktop} />
             </Switch>
         );
     }
