@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import PageWidthDesktop from 'components/layout-common/page-width-desktop';
 
 import './homepage-layout-desktop.scss';
@@ -9,8 +10,13 @@ class HomepageLayoutDesktop extends React.Component {
         return (
             <div className="homepage-layout-desktop">
                 <PageWidthDesktop className="layout--wrapper">
-                    <div className="layout--promo-main">Desktop Promotional Image</div>
-                    <div className="layout--thing">Something goes here</div>
+                    <div className="layout--promo-main">
+                        Desktop Promotional Image
+                    </div>
+                    <div className="layout--thing">
+                        Something goes here
+                        <Link className="layout--button" to="/results.html">to results</Link>
+                    </div>
                     <div className="layout--ads">
                         <div className="layout--ad1">Ad 1</div>
                         <div className="layout--ad2">Ad 2</div>

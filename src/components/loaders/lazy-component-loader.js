@@ -25,9 +25,9 @@ class LazyComponentLoader extends React.Component {
     }
 
     render () {
-        const Component = this.state.loadedComponent || 'div';
+        const Component = this.state.loadedComponent;
 
-        return <Component />;
+        return (Component) ? <Component {...this.props} /> : <div />;
     }
 
     load (props) {

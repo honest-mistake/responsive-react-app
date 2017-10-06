@@ -1,16 +1,17 @@
 import React from 'react';
-import {Switch, Route} from 'react-router-dom';
+import {Route} from 'react-router-dom';
+import LazyRouteLoader from 'components/loaders/lazy-route-loader';
 import HomepageContainerDesktop from 'components/pages/homepage/homepage-container-desktop';
-import ResultsContainerDesktop from 'components/pages/results/results-container-desktop';
+import ResultsContainerDesktop from 'bundle-loader?lazy&name=results-page-desktop!components/pages/results/results-container-desktop';
 
 export default class RoutesDesktop extends React.Component {
     render () {
         return (
-            <Switch>
+            <LazyRouteLoader>
                 <Route exact path="/" component={HomepageContainerDesktop} />
                 <Route exact path="/index.html" component={HomepageContainerDesktop} />
-                <Route path="/results.html" component={ResultsContainerDesktop} />
-            </Switch>
+                <Route exact path="/results.html" lazy name="results-page-desktop" component={ResultsContainerDesktop} />
+            </LazyRouteLoader>
         );
     }
 }

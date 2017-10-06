@@ -3,13 +3,14 @@ import PropTypes from 'prop-types';
 import {each} from 'lodash';
 import breakpointsData from 'data/responsive-breakpoints-data';
 import LazyComponentLoader from 'components/loaders/lazy-component-loader';
+import loadComponent from 'lib/load-component';
 
 class Responsive extends React.Component {
 
     constructor (props) {
         super(props);
         this.updateScreenWidth = this.updateScreenWidth.bind(this);
-        this.state = this.getRendererKey();
+        this.state = {renderKey: this.getRendererKey()};
     }
 
     componentWillMount () {
@@ -51,7 +52,7 @@ class Responsive extends React.Component {
             }
         });
 
-        return {renderKey: key};
+        return key;
     }
 
     getScreenWidth () {
@@ -59,7 +60,12 @@ class Responsive extends React.Component {
     }
 
     updateScreenWidth () {
-        this.setState(this.getRendererKey());
+        const {renderKey} = this.state;
+        const newKey = this.getRendererKey();
+
+        if (renderKey !== newKey) {
+            this.setState({renderKey: newKey});
+        }
     }
 
     shouldPreloadOtherBreakpoints () {
@@ -70,10 +76,14 @@ class Responsive extends React.Component {
         const {renderKey} = this.state;
 
         each(this.props.renderConfig, (config, key) => {
+            const {name, component} = config;
+
             if (key !== renderKey) {
-                setTimeout(() => {
-                    LazyComponentLoader.loadModule(config.name, config.component);
-                }, 0);
+                loadComponent({
+                    name: name,
+                    module: component,
+                    priority: 'low'
+                });
             }
         });
     }
